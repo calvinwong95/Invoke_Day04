@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 750px;
+    height: 950px;
+    margin: 0 auto;
+    background-image: url(images/bg-1.png); 
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#header {
+    width: 400px;
+    height: auto;
+    padding-left: 40px;
+    padding-top: 50px;
+    position: absolute;
+
+}
+
+#p1 {
+    font-size: 60px;
+    color:white;
+    margin-bottom: 10px;
+}
+
+#p2 {
+    font-size: 30px;
+    color: lightblue;
+    margin-bottom: 10px;
+}
+
+#p3 {
+    font-size: 15px;
+    color: cyan;
+}
+
+#p4 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#description {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 600px;
+    left: 50px;
+}
+
+.hexagon {
+    position: absolute;
+    width: 300px; 
+    height: 173.21px;
+    background-color: #ffffff;
+    margin: 86.60px 0;
+    transform: rotate(105deg);
+    top: 250px;
+    left: 300px;
+    z-index:3;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 86.60px solid #ffffff;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 86.60px solid #ffffff;
+}
+
+.hexagon2 {
+    position: absolute;
+    width: 250px; 
+    height: 144.34px;
+    background-color: #ffffff;
+    margin: 72.17px 0;
+    top: 500px;
+    left: 550px;
+    transform: rotate(105deg);
+  }
+  
+  .hexagon2:before,
+  .hexagon2:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+  }
+  
+  .hexagon2:before {
+    bottom: 100%;
+    border-bottom: 72.17px solid #ffffff;
+  }
+  
+  .hexagon2:after {
+    top: 100%;
+    width: 0;
+    border-top: 72.17px solid #ffffff;
+  }
+
+  .hexagon3 {
+    position: absolute;
+    width: 500px; 
+    height: 288.68px;
+    background-color: #e4f500;
+    margin: 144.34px 0;
+    transform: rotate(105deg);
+    top: -100px;
+    left: 480px;
+    z-index: 2;
+  }
+  
+  .hexagon3:before,
+  .hexagon3:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+  }
+  
+  .hexagon3:before {
+    bottom: 100%;
+    border-bottom: 144.34px solid #e4f500;
+  }
+  
+  .hexagon3:after {
+    top: 100%;
+    width: 0;
+    border-top: 144.34px solid #e4f500;
+  }
