@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 1240px;
+    height: 1754px;
+    background-color: black;
+    background-image:url(images/bg-2.png);
+    background-size: auto;
+    position: relative;
+    margin: auto;
+}
+
+
+.bar {
+    width: 750px;
+    height: 10px;
+    background-color: white;
+}
+
+.one {
+    position: absolute;
+    top: 420px;
+    left: 460px;
+}
+
+.two {
+    position: absolute;
+    top:1200px;
+    left: 20px;
+}
+
+.content {
+    height:auto;
+    width: auto;
+    position: absolute;
+
+}
+
+.content p {
+    font-size: 180px;
+    font-weight: 700;
+    font-family:sans-serif;
+    color: white;
+}
+
+.sur {
+    top: 470px;
+    left: 200px;
+    z-index: 99;
+}
+
+.real {
+    font-size: 160px;
+    top: 800px;
+    left: 660px;
+}
+
+.ism {
+    top: 1000px;
+    left: 200px;
+}
+
+#shoe {
+    position: absolute;
+    top: 400px;
+    left: 530px;
+    animation-name: moveShoe;
+    animation-duration: 3s;
+}
+
+@keyframes moveShoe {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+#pineapple {
+    position: absolute;
+    top: 790px;
+    left: 480px;
+    z-index: 99;
+    animation-name: movePineapple;
+    animation-duration: 8s;
+}
+
+@keyframes movePineapple {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+#moon {
+    position: absolute;
+    top: 650px;
+    left: 250px;
+    animation-name: moveMoon;
+    animation-duration: 5s;
+}
+
+@keyframes moveMoon {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
