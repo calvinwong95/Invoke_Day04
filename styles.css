@@ -1,65 +1,429 @@
 * {
-    margin : 0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html,body {
-    width: 100%;
-    height: 100%;
     font-family: sans-serif;
 }
 
-.container-fluid {
-    width: 100%;
+#container {
+    width: 1116px;
     height: auto;
-    background-color: green;
-}
-
-.container {
-    width: auto;
-    max-width: 900px;
-    height: auto;
-    background-color: red;
+    background-color:white;
+    border:0.5px solid black;
     margin: 0 auto;
 }
-
- header h1, header ul, header li {
-    color: white;
-    display: inline-block;
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
+#logo h1 {
+    margin-left: 15px;
+}
+#navbar {
+    width: 1116px;
+    height: 100px;
+    background-color:white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-header ul {
-    margin-left: 500px;
+#navbar ul {
+    width: 400px;
+    height: 100px;
+    list-style-type:none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-header li {
-    margin-right:10px;
+#container-virtual {
+    width: 1116px;
+    height: 450px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.banner {
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: skyblue;
-    text-align: center;
+#content-virtual {
+    width: 310px;
+    height: 450px;
+    background-color: white;
+    padding: 60px 0px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
 }
 
-.banner h1 {
-    margin-bottom: 100px;
+#content-virtual p {
+    font-size: 15px;
+    color: lightgrey;
 }
 
-.price-holder {
-    width: 50%;
-    height: 300px;
+.button {
+    width: 140px;
+    height: 40px;
     background-color:blue;
-    float: left;
     text-align: center;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+#image-virtual {
+    width:486px;
+    height: 450px;
+    background-image:url(day4_challenge/landing1/images/illustration.png);
+    background-size: cover;
+}
+
+#container-services {
+    width: 1116px;
+    height: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 50px 0px;
+    box-sizing: border-box;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+#content-services {
+    width: 660px;
+    height: 110px;
+    background-color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.bar {
+    background-color: black;
+    width: 40px;
+    height: 2px;
+}
+
+#content-services p {
+    font-size: 13px;
+    color: lightgrey;
+}
+
+#grid-services {
+    width: 780px;
+    height: 520px;
+    background-color:white;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.grid {
+    width: 245px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    margin: 0 auto;
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+}
+
+.grid h1 {
+    font-size: 20px;
+}
+
+.grid p {
+    font-size: 13px;
+    color: lightgrey;
+}
+
+.services {
+    background-color:white;
+    border :2px solid blue;
+    color: blue;
+    border-width: thin;
+
+
+}
+
+#container-publish {
+    width: 1116px;
+    height: 950px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-publish p{
+    font-size: 13px;
+    color: lightgrey;
+}
+
+.box-publish {
+    width: 1116px;
+    height: 475px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-publish {
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    padding: 20px 100px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#container-customer {
+    width: 1116px;
+    height: 500px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#content-customer {
+    width: 780px;
+    height: 300px;
+    background-color: rgb(6, 49, 63);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content-customer h1 {
+    color: white;
+}
+
+#inner-content-customer {
+    width: 600px;
+    height: 100px; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+#Edward {
+    width: 200px;
+    height: 40px; 
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#Edward h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+#Edward h3 {
+    font-size: 15px;
+    color: white;
+}
+
+#Edward-content {
+    margin-top: 20px;
+    width: 280px;
+    height: 80px;
+    color: white;
+    font-size: 13px;
+}
+
+#navigation-customer {
+    width: 240px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: white;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-article {
+    width: 1116px;
+    height: 750px;
+    background-color: white;
+    padding-top: 50px;
+    box-sizing:border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#content-article {
+    width: 800px;
+    height: 350px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.grid-article {
+    width: 245px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    overflow: hidden;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content:space-between;
+    align-items: center;
+}
+
+#image-article {
+    width: 245px;
+    height: 170px;
+
+}
+
+#text-article {
+    width: 200px;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start;
+
+}
+
+#text-article h1 {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#text-article p {
+    font-size: 13px;
+    line-height: 20px;
+    color: lightgrey;
+}
+
+#text-article h2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: blue;
+}
+
+#container-footer {
+    width: 1116px;
+    height: 300px;
+    background-color: rgb(34, 116, 148);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#content-footer {
+    width: 270px;
+    height: 140px;
+
+}
+#logo-footer {
+    width: 150px;
+    height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-footer h1 {
     font-size: 30px;
+    color: white;
+}
+
+#content-footer p {
+    font-size: 13px;
+    color: white;
+}
+
+
+.footer {
+    color: white;
+    width: auto;
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer h1 {
+    font-size: 20px;
+}
+
+.footer ul li {
+    font-size: 15px;
+    line-height: 25px;
+    list-style-type: none;
 }

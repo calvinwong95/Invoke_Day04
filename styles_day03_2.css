@@ -6,9 +6,8 @@
 #container {
     width: 1240px;
     height: 1754px;
-    background-color: black;
     background-image:url(images/bg-2.png);
-    background-size: auto;
+    background-size: cover;
     position: relative;
     margin: auto;
 }
@@ -67,38 +66,44 @@
     position: absolute;
     top: 400px;
     left: 530px;
-    animation-name: moveShoe;
+    animation-name: moveImg;
     animation-duration: 3s;
 }
 
-@keyframes moveShoe {
-    0% {opacity: 0}
-    100% {opacity: 1}
-}
 
 #pineapple {
     position: absolute;
     top: 790px;
     left: 480px;
     z-index: 99;
-    animation-name: movePineapple;
-    animation-duration: 8s;
+    animation-name: moveImg;
+    animation-duration: 3s;
+
+    animation-delay: 1s;
 }
 
-@keyframes movePineapple {
-    0% {opacity: 0}
-    100% {opacity: 1}
-}
+
+
 
 #moon {
     position: absolute;
     top: 650px;
     left: 250px;
-    animation-name: moveMoon;
-    animation-duration: 5s;
+    animation-name: moveImg;
+    animation-duration: 3s;
+
+    animation-delay: 0.5ss;
+    animation-fill-mode: backwards;
 }
 
-@keyframes moveMoon {
-    0% {opacity: 0}
-    100% {opacity: 1}
+@keyframes moveImg {
+    from {
+        transform: scale(0) rotate(0);
+        opacity: 0;
+
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
 }
